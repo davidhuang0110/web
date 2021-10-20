@@ -94,8 +94,8 @@ section #text
     text-align: center;
     line-height: 0.55em;
     font-family: 'Rancho', cursive;
-    transform: translateY(-50%);
-    /* z-index: 20; */
+    top: 250px;
+    z-index: 20;
 }
 section #text span
 {
