@@ -100,3 +100,9 @@ section #text span
     padding: 100px;
     background: #094b65;
 }
+.sec h2
+{
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
