@@ -18,13 +18,35 @@
 
     <section>
         <h2 id="text"><span>Hello</span><br>Adeventure</h2>
+        <img src="images/bird1.png" id="bird1">
+        <img src="images/bird2.png" id="bird2">
+        <img src="images/forest.png" id="forest">
         <a href="#" id="btn">Explore</a>
+        <img src="images/rocks.png" id="rocks">
+        <img src="images/water.png" id="water">
     </section>
 
     <div class="sec">
         <h2>Parallax Scrolling Effects</h2>
         <p>effect</p>
     </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let tebtnxt = document.getElementById('btn');
+        let rocks = document.getElementById('text');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+        })
+    </script>
 </body>
 
 </html>
