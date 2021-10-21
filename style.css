@@ -28,7 +28,7 @@ body
 }
 #header .logo
 {
-    color: #094b65;
+    color: #37B2D9;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
@@ -48,13 +48,13 @@ body
 {
     text-decoration: none;
     padding: 6px 15px;
-    color: #094b65;
+    color: #37B2D9;
     border-radius: 20px;
 }
 #header ul li a:hover,
 #header ul li a:active
 {
-    background: #094b65;
+    background: #37B2D9;
     color: #fff;
 }
 section
@@ -75,7 +75,7 @@ section::before
     left: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #094b65, transparent);
+    background: linear-gradient(to top, #37B2D9, transparent);
     z-index: 10;
 }
 section img
@@ -91,7 +91,7 @@ section img
 section #text
 {
     position: absolute;
-    color: #094b65;
+    color: #37B2D9;
     font-size: 10vw;
     text-align: center;
     line-height: 0.55em;
@@ -112,7 +112,7 @@ section #text span
     display: inline-block;
     padding: 8px 30px;
     background: #fff;
-    color: #094b65;
+    color: #37B2D9;
     font-size: 1.2em;
     font-weight: 500;
     letter-spacing: 2px;
@@ -123,7 +123,7 @@ section #text span
 {
     position: relative;
     padding: 100px;
-    background: #094b65;
+    background: #37B2D9;
     top: 100px;
 }
 .sec h2
