@@ -26,7 +26,10 @@
         <a href="#" id="btn">Explore</a>
         <img src="images/rocks.png" id="rocks">
         <img src="images/water.png" id="water">
-        <img src="images/sun.png" id="sun" style="width: 100px; height: 100px; left: 290px; top: 180px; z-index: -222;">
+        <img src="images/sun.png" id="sun" style="width: 100px; height: 100px; left: 30%; top: 180px; z-index: -2222;">
+        <img src="images/shark.png" id="shark" 
+        data-aos="fade-left" data-aos-duration="3000" 
+        style="width: 400px; height: 300px; top: 710px; left: 25%; opacity: 80%;">
     </section>
 
     <div class="sec">
@@ -55,6 +58,7 @@
         let header = document.getElementById('header');
         let sun = document.getElementById('sun');
         let mask = document.getElementById('mask');
+        let shark = document.getElementById('shark');
 
         window.addEventListener('scroll', function () {
             let value = window.scrollY;
@@ -68,10 +72,11 @@
             sun.style.top = 180 + value * 1.6 + 'px';
             sun.style.opacity = 100 - value * 0.2 + '%';
             forest.style.top = value * 0.25 + 'px';
-            // forest.style.opacity = 80 - value * 0.17 + '%';
             rocks.style.opacity = 100 - value * 0.1 + '%';
             header.style.top = value * 0.7 + 'px';
             mask.style.opacity = value * 0.2 + '%';
+            shark.style.left = 25 + value * -0.05 + '%';
+            shark.style.opacity = 80 - value * 0.2 + '%';
         })
     </script>
 
