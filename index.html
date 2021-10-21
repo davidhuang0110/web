@@ -26,8 +26,7 @@
         <a href="#" id="btn">Explore</a>
         <img src="images/rocks.png" id="rocks">
         <img src="images/water.png" id="water">
-        <img src="images/sun.png" id="sun" 
-        style="width: 100px; height: 100px; left: 30%; top: 100px; z-index: -222;">
+        <img src="images/sun.png" id="sun" style="width: 100px; height: 100px; left: 30%; top: 100px; z-index: -222;">
         <img src="images/shark.png" id="shark" data-aos="fade-left" data-aos-duration="3000"
             style="width: 400px; height: 300px; top: 75%; left: 25%; opacity: 80%;">
     </section>
@@ -61,7 +60,8 @@
         let shark = document.getElementById('shark');
 
         window.addEventListener('scroll', function () {
-            let value = window.scrollY;
+            // let value = window.scrollY;
+            let value = window.pageYOffset;
 
             text.style.top = 250 + value * -1.8 + 'px';
             bird1.style.top = value * -1.5 + 'px';
@@ -82,7 +82,11 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            offset: 200,
+            duration: 1200,
+            easing: 'ease',
+        });
     </script>
 </body>
 
