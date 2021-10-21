@@ -64,6 +64,7 @@ section
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 100px;
 }
 section::before
 {
