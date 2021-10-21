@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
+@import url('https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet');
 *
 {
     margin: 0;
@@ -123,6 +124,7 @@ section #text span
     position: relative;
     padding: 100px;
     background: #094b65;
+    top: 100px;
 }
 .sec h2
 {
@@ -136,4 +138,6 @@ section #text span
     font-size: 1em;
     color: #fff;
     margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
 }
