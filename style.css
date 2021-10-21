@@ -28,7 +28,7 @@ body
 }
 #header .logo
 {
-    color: #37B2D9;
+    color: #154360;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
@@ -48,21 +48,21 @@ body
 {
     text-decoration: none;
     padding: 6px 15px;
-    color: #37B2D9;
+    color: #154360;
     border-radius: 20px;
 }
 #header ul li a:hover,
 #header ul li a:active
 {
-    background: #37B2D9;
+    background: #154360;
     color: #fff;
 }
 #mask
 {
     position: absolute;
     width: 100%;
-    height: 100vh;
-    background: #000;
+    height: 120vh;
+    background: #154360;
     z-index: 100;
     opacity: 0;
 }
@@ -84,7 +84,7 @@ section::before
     left: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #37B2D9, transparent);
+    background: linear-gradient(to top, #154360, transparent);
     z-index: 10;
 }
 section img
@@ -100,7 +100,7 @@ section img
 section #text
 {
     position: absolute;
-    color: #37B2D9;
+    color: #154360;
     font-size: 10vw;
     text-align: center;
     line-height: 0.55em;
@@ -121,7 +121,7 @@ section #text span
     display: inline-block;
     padding: 8px 30px;
     background: #fff;
-    color: #37B2D9;
+    color: #154360;
     font-size: 1.2em;
     font-weight: 500;
     letter-spacing: 2px;
@@ -132,7 +132,7 @@ section #text span
 {
     position: relative;
     padding: 100px;
-    background: #37B2D9;
+    background: #154360;
     top: 100px;
 }
 .sec h2
