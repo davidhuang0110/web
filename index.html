@@ -16,6 +16,8 @@
         </ul>
     </header>
 
+    <div id="mask">a</div>
+
     <section>
         <h2 id="text"><span>Hello!!!</span><br>Welcome</h2>
         <img src="images/bird1.png" id="bird1">
@@ -52,6 +54,7 @@
         let water = document.getElementById('water');
         let header = document.getElementById('header');
         let sun = document.getElementById('sun');
+        let mask = document.getElementById('mask');
 
         window.addEventListener('scroll', function () {
             let value = window.scrollY;
@@ -62,11 +65,13 @@
             bird2.style.top = value * -1.5 + 'px';
             bird2.style.left = value * -5 + 'px';
             btn.style.marginTop = value * 1.5 + 'px';
-            sun.style.top = 180 + value * 1.8 + 'px';
+            sun.style.top = 180 + value * 1.6 + 'px';
+            sun.style.opacity = 100 - value * 0.2 + '%';
             forest.style.top = value * 0.25 + 'px';
-            forest.style.opacity = 80 - value * 0.17 + '%';
+            // forest.style.opacity = 80 - value * 0.17 + '%';
             rocks.style.opacity = 100 - value * 0.1 + '%';
             header.style.top = value * 0.7 + 'px';
+            mask.style.opacity = value * 0.2 + '%';
         })
     </script>
 
