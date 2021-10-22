@@ -2,14 +2,13 @@
 <html>
 
 <head>
-    <tittle>dsfdsff</tittle>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header id="header">
         <a href="#" class="logo">Website</a>
-
         <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
@@ -17,14 +16,69 @@
         </ul>
     </header>
 
+    <div id="mask"></div>
+
     <section>
-        <h2><span>Hello</span><br>Welcome</h2>
-
-        <p>adadadfs</p>
-
-        <img src="./shark.png"/>
+        <h2 id="text"><span>Hello</span><br>Welcome</h2>
+        <img src="images/bird1.png" id="bird1">
+        <img src="images/bird2.png" id="bird2">
+        <img src="images/forest.png" id="forest" style="opacity: 80%;">
+        <a href="#" id="btn">Explore</a>
+        <img src="images/rocks.png" id="rocks">
+        <img src="images/water.png" id="water">
+        <img src="images/sun.png" id="sun" style="width: 100px; height: 100px; left: 30%; top: 100px; z-index: -222;">
+        <img src="images/shark.png" id="shark" 
+            style="width: 400px; height: 300px; top: 75%; left: 25%; opacity: 80%;">
     </section>
 
+    <div class="sec">
+        <h2>Introduction</h2>
+
+        <p>資工四甲<br>黃鈞昱<br>407261568</p>
+    </div>
+
+    <!-- <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let forest = document.getElementById('forest');
+        let rocks = document.getElementById('rocks');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        let sun = document.getElementById('sun');
+        let mask = document.getElementById('mask');
+        let shark = document.getElementById('shark');
+
+        window.addEventListener('scroll', function () {
+            let value = window.pageYOffset;
+
+            text.style.top = 250 + value * -1.8 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            sun.style.marginTop = value * 1.2 + 'px';
+            sun.style.opacity = 100 - value * 0.2 + '%';
+            forest.style.top = value * 0.25 + 'px';
+            rocks.style.opacity = 100 - value * 0.1 + '%';
+            header.style.top = value * 0.7 + 'px';
+            mask.style.opacity = value * 0.2 + '%';
+            shark.style.left = 25 + value * -0.05 + '%';
+            shark.style.opacity = 80 - value * 0.2 + '%';
+        })
+    </script> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1500,
+            easing: 'ease',
+        });
+    </script>
 </body>
 
 </html>
