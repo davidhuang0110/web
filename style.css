@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
-@import url('https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet');
+
+
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 body
 {
@@ -23,7 +21,6 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
     background: linear-gradient(azure, #fff, transparent);
 }
 #header .logo
@@ -57,15 +54,6 @@ body
     background: #154360;
     color: #fff;
 }
-#mask
-{
-    position: absolute;
-    width: 100%;
-    height: 113vh;
-    background: #154360;
-    z-index: 97;
-    opacity: 0;
-}
 section
 {
     position: relative;
@@ -87,75 +75,10 @@ section::before
     background: linear-gradient(to top, #154360, transparent);
     z-index: 10;
 }
-section img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-section #text
-{
-    position: absolute;
-    color: #154360;
-    font-size: 11vw;
-    text-align: center;
-    line-height: 0.55em;
-    font-family: 'Rancho', cursive;
-    top: 250px;
-    z-index: 20;
-}
 section #text span
 {
     font-size: 0.20em;
     letter-spacing: 2px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-}
-#btn
-{
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 30px;
-    background: #fff;
-    color: #154360;
-    font-size: 1.2em;
-    font-weight: 500;
-    letter-spacing: 2px;
-    border-radius: 40px;
-    transform: translateY(100px);
-    z-index: 100;
-}
-#btn:hover, #btn:active
-{
-    background: #154360;
-    color: #fff;
-}
-.sec
-{
-    position: relative;
-    padding: 100px;
-    background: #154360;
-    top: 100px;
-}
-.sec h2
-{
-    font-size: 2.5em;
-    color: #fff;
-    margin-bottom: 10px;
-    margin-top: 150px;
-    transform: translateY(-100px);
-    text-align: center; 
-}
-.sec p
-{
-    font-size: 1em;
-    color: #fff;
-    margin-bottom: 10px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 10px;
 }
