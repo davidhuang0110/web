@@ -118,7 +118,7 @@ section #text span
 #btn
 {
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     padding: 8px 30px;
     background: #fff;
     color: #154360;
@@ -128,6 +128,7 @@ section #text span
     border-radius: 40px;
     transform: translateY(100px);
     z-index: 100;
+    position: absolute;
 }
 #btn:hover, #btn:active
 {
