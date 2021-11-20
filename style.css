@@ -178,6 +178,6 @@ section #text span
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 40%;
-    width: 40%;
+    height: 400px;
+    width: 800px;
 }
