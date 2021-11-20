@@ -2,8 +2,19 @@
 <html>
 
 <head>
+    <tittle>LAB4</tittle>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+            $("#div1").hide();
+
+            $("#btn1").click(function() {
+                $("#div1").toggle(1000);
+                return false;
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -36,53 +47,17 @@
         <p>
             資工四甲<br>黃鈞昱<br>407261568<br><br><br>
 
-            <a id="igbtn" href="https://www.instagram.com/cyhuang0110/">IG</a>
+            <button id="btn1">CLICK!</button>
         </p>
 
+        <div>
+            <div id="div1" style="display: none;">
+                <img class="imgg" src="images/sharkk.jpg">
+            </div>
+            
+        </div>
+
     </div>
-
-    <!-- <script>
-        let text = document.getElementById('text');
-        let bird1 = document.getElementById('bird1');
-        let bird2 = document.getElementById('bird2');
-        let btn = document.getElementById('btn');
-        let forest = document.getElementById('forest');
-        let rocks = document.getElementById('rocks');
-        let water = document.getElementById('water');
-        let header = document.getElementById('header');
-        let sun = document.getElementById('sun');
-        let mask = document.getElementById('mask');
-        let shark = document.getElementById('shark');
-
-        window.addEventListener('scroll', function () {
-            let value = window.pageYOffset;
-
-            text.style.top = 250 + value * -1.8 + 'px';
-            bird1.style.top = value * -1.5 + 'px';
-            bird1.style.left = value * 2 + 'px';
-            bird2.style.top = value * -1.5 + 'px';
-            bird2.style.left = value * -5 + 'px';
-            btn.style.marginTop = value * 1.5 + 'px';
-            sun.style.marginTop = value * 1.2 + 'px';
-            sun.style.opacity = 100 - value * 0.2 + '%';
-            forest.style.top = value * 0.25 + 'px';
-            rocks.style.opacity = 100 - value * 0.1 + '%';
-            header.style.top = value * 0.7 + 'px';
-            mask.style.opacity = value * 0.2 + '%';
-            shark.style.left = 25 + value * -0.05 + '%';
-            shark.style.opacity = 80 - value * 0.2 + '%';
-        })
-    </script> -->
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        AOS.init({
-            offset: 200,
-            duration: 1500,
-            easing: 'ease',
-        });
-    </script>
 </body>
 
 </html>
