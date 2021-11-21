@@ -6,12 +6,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
     <script>
-        $(document).ready(function() {
-            $("#div1").hide();
+        $(document).ready(function () {
+            $("#div2").hide();
 
-            $("#btn1").click(function() {
-                $("#div1").toggle(1000);
-                return false;
+            $("#btn1").click(function () {
+                $("#div2").toggle(1000);
             });
         });
     </script>
@@ -42,19 +41,24 @@
     </section>
 
     <div class="sec">
-        <h2>Introduction</h2>
+        <div id="div1">
+            <h2>Introduction</h2>
 
-        <p>
-            資工四甲<br>黃鈞昱<br>407261568<br><br><br>
+            <p>
+                資工四甲<br>黃鈞昱<br>407261568<br><br><br>
 
-            <button id="btn1">CLICK!!</button>
-        </p>
+                <button id="btn1">CLICK!!</button>
+            </p>
+        </div>
+
 
         <div>
-            <div id="div1" style="display: none;">
+            <div id="div2" style="display: none;">
+                <br><br>
                 <img class="picture" src="images/sharkk.jpg">
+                <br><br>
+                <p>BLÅHAJ</p>
             </div>
-            
         </div>
 
     </div>
